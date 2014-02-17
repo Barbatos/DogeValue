@@ -1,0 +1,20 @@
+{
+  "name": "DogeValue",
+  "version": "0.2",
+
+  "description": "Keep up with the value of the Dogecoin",
+  "icons": { 
+    "16" : "images/16.png",
+    "48" : "images/48.png",
+    "128" : "images/128.png"
+  },
+  "permissions": [ "tabs", "http://*/", "https://*/*" ],
+  "homepage_url": "http://barbatos.fr",
+  "background": { "page": "background.html" },
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "images/16.png",
+    "default_title": "DogeValue",
+    "default_popup": "popup.html"
+  }
+}
