@@ -26,3 +26,10 @@ function getDogecoinValue() {
 })();
 
 chrome.browserAction.onClicked.addListener(updateCounter);
+
+if (chrome.runtime && chrome.runtime.onStartup) {
+    chrome.runtime.onStartup.addListener(updateCounter);
+} 
+else {
+    chrome.windows.onCreated.addListener(updaterCounter);
+}
